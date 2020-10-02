@@ -1,8 +1,10 @@
-# netflixredesign
+# Netflix-Redesign-UI
 
-A new Flutter application.
 
-## Getting Started
+[Home screen youtube video](https://youtu.be/BEkvmWhbUqk)
+
+
+## Getting Started with flutter
 
 This project is a starting point for a Flutter application.
 
