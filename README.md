@@ -2,7 +2,9 @@
 
 Redesign Netflix app UI using flutter
 
-# Youtube Link
+# Youtube Links
 
 [Home screen speed code youtube video](https://youtu.be/BEkvmWhbUqk)
+
+[Movie screen speed code youtube video](https://youtu.be/bBYwYvT5Kac)
 
