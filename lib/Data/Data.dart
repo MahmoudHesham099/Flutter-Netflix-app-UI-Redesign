@@ -7,7 +7,8 @@ class MovieOrSeries {
   String length;
   String country;
   int seasons;
-
+  List<String> cast;
+  Map<String, String> director;
   MovieOrSeries(
       {this.coverUrl,
       this.title,
@@ -16,7 +17,9 @@ class MovieOrSeries {
       this.year,
       this.length,
       this.country,
-      this.seasons});
+      this.seasons,
+      this.cast,
+      this.director});
 }
 
 final List<MovieOrSeries> mainList = [
@@ -32,16 +35,26 @@ final List<MovieOrSeries> mainList = [
     seasons: 0,
   ),
   MovieOrSeries(
-    coverUrl: 'assets/laCasa.jpg',
-    title: 'money heist',
-    categories: ["Action", "Crime", "Mystery"],
-    year: 2017,
-    country: 'USA',
-    length: '1h 10min',
-    description:
-        'An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.',
-    seasons: 5,
-  ),
+      coverUrl: 'assets/laCasa.jpg',
+      title: 'money heist',
+      categories: ["Action", "Crime", "Mystery"],
+      year: 2017,
+      country: 'USA',
+      length: '1h 10min',
+      description:
+          'An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.',
+      seasons: 5,
+      cast: [
+        'assets/cast1.jpg',
+        'assets/cast2.jpg',
+        'assets/cast3.jpg',
+        'assets/cast4.jpg'
+      ],
+      director: {
+        'name': 'Alex Pina',
+        'details':
+            'Álex Pina is a Spanish television producer, writer, series creator and director, known for the crime drama La Casa de Papel. Previous shows include Vis a Vis, El embarcadero and Los hombres de Paco.',
+      }),
   MovieOrSeries(
       coverUrl: 'assets/ModernFamily.png',
       title: 'modern family',

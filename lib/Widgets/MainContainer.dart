@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflixredesign/Data/Data.dart';
+import 'package:netflixredesign/Screens/MovieScreen.dart';
 
 class MainContainer extends StatelessWidget {
   final MovieOrSeries movieOrSeries;
@@ -19,6 +20,13 @@ class MainContainer extends StatelessWidget {
               image: AssetImage(movieOrSeries.coverUrl),
             )),
       ),
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) =>
+                    MovieScreen(movieOrSeries: movieOrSeries)));
+      },
     );
   }
 }
